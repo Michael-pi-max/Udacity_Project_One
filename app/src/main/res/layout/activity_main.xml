@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- For classifying the screen to two equal section Linear layout is used as root view-->
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<!--    For adding text over image Relative layout is embedded into the root linear layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/garden_image"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/garden"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/buisness_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tigist Garden"
+            android:layout_above="@id/buisness_quote"
+            android:layout_alignParentRight="true"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="casual"
+            android:paddingRight="32dp"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/buisness_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='"To Plant a garden is to believe in tomorrow"'
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="casual"
+
+            android:paddingRight="32dp"
+            android:paddingBottom="8dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+           />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="+21 NewYork,Ave"
+            android:textSize="20sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_event_available_green_24dp"
+            android:paddingLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/7"
+            android:textSize="20sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_email_green_24dp"
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="TG@gmail.com"
+            android:textSize="20sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone_android_green_24dp"
+            android:paddingLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+123"
+            android:textSize="20sp"
+            android:paddingTop="4dp"
+            android:paddingLeft="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you can't buy Happiness but you can buy PLANTS and that's pretty much the same thing, contact us we put Bloom in 'Bloomington"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="We are best known for:"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_florist_green_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:textSize="18sp"
+                android:text="Flowers we provide for sell"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_airplanemode_active_green_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:textSize="18sp"
+                android:text="Flower delivery"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_green_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:textSize="18sp"
+                android:text="Home to Home Garden monitoring"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="32dp"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            android:text="Our Customers are our Partners"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="4dp"
+            android:textStyle="italic"
+            android:fontFamily="casual"
+            android:text="Be Our partner"
+            />
+    </LinearLayout>
+</LinearLayout>
